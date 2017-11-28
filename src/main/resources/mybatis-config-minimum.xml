@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties"></properties>
+	<settings>
+		<setting name="autoMappingBehavior" value="PARTIAL" />
+	</settings>
+	<typeAliases>
+		<package name="com.raidencentral.app.domain" />
+	</typeAliases>
+
+	<typeHandlers>
+		<package name="com.raidencentral.app.type_handlers" />
+	</typeHandlers>
+	<mappers>
+		<package name="com.raidencentral.app.mappers"/>
+	</mappers>
+</configuration>
